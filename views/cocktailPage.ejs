@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container cocktailPageCon">
+    <div class="nameCon">
+        <p class="cocktailName"><%= drink.strDrink %></p>
+        <img class="cocktailImage" src="<%= drink.strDrinkThumb %>" alt="Cocktail Image">
+    </div>
+    <div class="detailsCon">
+        <div class="ingredientsCon">
+            <p class="ingredientsConTitle">Ingredients:</p>
+            <% ingredients.forEach(ingredient => { %>
+                <p class="ingredientItems"><%= ingredient %></p>
+            <% }); %>
+        </div>
+        <div class="typeCon">
+            <p class="typeConTitle">Type:</p>
+            <p><%= drink.strAlcoholic %></p>
+        </div>
+        <div class="instructionCon">
+            <p class="instructionConTitle">Instruction:</p>
+            <p><%= drink.strInstructions %></p>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
