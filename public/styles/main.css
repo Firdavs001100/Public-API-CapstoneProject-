@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+header {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.welcomeCocktailImg {
+    width: 90px;
+}
+
+.welcomeNotice {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.titleDetails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleDetails h1 {
+    text-align: center;
+    color: #E67E22;
+    
+}
+
+.titleDetails p {
+    color: #D4A056;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+    max-width: 500px;
+}
+
+.searchCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;      
+}
+
+/* .searchCon h3 {
+    font-family: ;
+} */
+
+.searchCon h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color:rgb(156, 141, 76);
+    letter-spacing: 1px;
+}
+
+.randomCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.searchDetails input {
+    width: 160px;
+    border-radius: 10px;
+    border-color: #D4A056;
+}
+
+.searchBtn {
+    border-radius: 10px;
+    color:saddlebrown;
+    border-color: #D4A056;
+}
+
+.randomBtn {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(174 156 138);
+    color: white;
+    border-color: #ab7e56;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    width: 350px;
+    height: 40px;
+}
+
+
+.nav-item {
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+footer span {
+    margin-left: 10px;
+}
+

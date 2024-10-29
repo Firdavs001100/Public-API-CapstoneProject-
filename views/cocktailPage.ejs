@@ -1,28 +1,40 @@
-<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Page</title>
+    <link rel="stylesheet" href="/styles/cocktailPage.css" >
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
 
-<div class="container cocktailPageCon">
-    <div class="nameCon">
-        <p class="cocktailName"><%= drink.strDrink %></p>
-        <img class="cocktailImage" src="<%= drink.strDrinkThumb %>" alt="Cocktail Image">
+    <div class="container cocktailPageCon">
+        <div class="nameCon">
+            <p class="cocktailName"><%= drink.strDrink %></p>
+            <img class="cocktailImage" src="<%= drink.strDrinkThumb %>" alt="Cocktail Image">
+        </div>
+        
+        <div class="detailsCon">
+            <div class="ingredientsCon">
+                <p class="ingredientsConTitle">Ingredients:</p>
+                <ul>
+                    <% ingredients.forEach(ingredient => { %>
+                        <li class="ingredientItems"> <%= ingredient %> </li>
+                    <% }); %>
+                </ul>
+            </div>
+            <div class="typeCon">
+                <p class="typeConTitle">Type:</p>
+                <p class="typeConItem"><%= drink.strAlcoholic %></p>
+            </div>
+            <div class="instructionCon">
+                <p class="instructionConTitle">Instruction:</p>
+                <p><%= drink.strInstructions %></p>
+            </div>
+        </div>
     </div>
-    <div class="detailsCon">
-        <div class="ingredientsCon">
-            <p class="ingredientsConTitle">Ingredients:</p>
-            <% ingredients.forEach(ingredient => { %>
-                <p class="ingredientItems"><%= ingredient %></p>
-            <% }); %>
-        </div>
-        <div class="typeCon">
-            <p class="typeConTitle">Type:</p>
-            <p><%= drink.strAlcoholic %></p>
-        </div>
-        <div class="instructionCon">
-            <p class="instructionConTitle">Instruction:</p>
-            <p><%= drink.strInstructions %></p>
-        </div>
-    </div>
-</div>
 
-
-
-<%- include("partials/footer.ejs") %>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+.cocktailPageCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.detailsCon {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: 150px;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.instructionConTitle, .typeConTitle, .ingredientsConTitle {
+    text-decoration: underline;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.ingredientsCon {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.instructionCon {
+    width: 400px;
+}
+
+.cocktailName {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.cocktailImage {
+    width: 350px;
+    height: 300px;
+    object-fit: fill;
+    border: 2px solid black;
+    
+}
