@@ -1,0 +1,33 @@
+.nameCon {
+    /* display: block; */
+}
+
+.cocktailPageCon {
+    display: block;
+}
+
+.detailsCon {
+    justify-content: center;
+    grid-template-columns: repeat(2, 200px);
+    font-size: 23px;
+}
+
+.typeCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructionCon {
+    width: 420px;
+}
+
+.nameCon {
+    margin-right: 0;
+}
+
+.cocktailImage {
+    width: 400px;
+    height: 300px;
+    /* object-fit: cover; */
+}
